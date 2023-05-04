@@ -11,8 +11,8 @@ const index = ({ deputados }) => {
             <Container>
                 <Row>
                     {deputados.map(item => (
-                        <Col md = {3}>
-                            <Link href={'/'}><Card.Img  className='card bg-secondary m-2' variant='top' src={item.urlFoto}></Card.Img></Link>
+                        <Col md={2}>
+                            <Link href={'/detalhes/' + item.id}><Card.Img className='card bg-secondary m-2' variant='top' src={item.urlFoto}></Card.Img></Link>
                         </Col>
                     ))}
                 </Row>
